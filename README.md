@@ -1,2 +1,3 @@
-# cluster311.github.io
-Cluster 311 static home page
+# Cluster 311 static home page
+
+Nothing to see here by now
