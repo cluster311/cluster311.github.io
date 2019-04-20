@@ -192,9 +192,13 @@ input, select, textarea {
 	}
 
 		@media screen and (max-width: 1680px) {
-
+			#page-wrapper {
+				max-width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 			.container {
-				width: 1200px;
+				width: 960px;
 			}
 
 		}
@@ -2809,7 +2813,10 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 24em;
+				margin-left: auto;
+				margin-right: auto;
+				height: 16em;
+				max-width: 80%;
 			}
 
 	}
@@ -2855,6 +2862,7 @@ input, select, textarea {
 
 			#banner {
 				height: 20em;
+				max-width: 100%;
 			}
 
 		/* Wrapper */
@@ -2890,6 +2898,12 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 				line-height: 1.5em;
+			}
+
+			#banner {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 80%;
 			}
 
 	}
@@ -2967,6 +2981,7 @@ input, select, textarea {
 
 			#banner {
 				height: 20em;
+				max-width: 100%;
 			}
 
 				#banner header h2 {
@@ -3255,6 +3270,7 @@ input, select, textarea {
 
 			#banner {
 				height: 18em;
+				max-width: 100%;
 			}
 
 		/* Wrapper */
@@ -3311,6 +3327,7 @@ input, select, textarea {
 
 			#banner {
 				height: 20em;
+				max-width: 100%;
 			}
 
 				#banner header {
