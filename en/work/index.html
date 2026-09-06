@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work | Cluster311</title>
+  <meta name="description" content="Cluster311 work: open data portals for the Province of Cordoba and the National University of Cordoba, the Cordoba Open Budget, health data and more.">
+  <meta property="og:title" content="Work | Cluster311">
+  <meta property="og:description" content="Cluster311 work: open data portals for the Province of Cordoba and the National University of Cordoba, the Cordoba Open Budget, health data and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cluster311.com/en/work/">
+  <meta property="og:locale" content="en">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://cluster311.com/en/work/">
+  <link rel="alternate" hreflang="en" href="https://cluster311.com/en/work/">
+  <link rel="alternate" hreflang="es" href="https://cluster311.com/trabajo/">
+  <link rel="alternate" hreflang="x-default" href="https://cluster311.com/trabajo/">
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/en/">cluster311.com</a>
+      <nav aria-label="Main">
+      <a href="/en/">home</a>
+      <a href="/en/services/">services</a>
+      <a href="/en/principles/">principles</a>
+      <a href="/en/work/" aria-current="page">work</a>
+      <a href="/en/contact/">contact</a>
+      </nav>
+      <span class="lang"><a href="/trabajo/" lang="es" hreflang="es">castellano</a></span>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero">
+      <h1>Work</h1>
+      <p class="lede">Data portals, public data infrastructure and tools for governments,
+        universities, media and organizations.</p>
+    </section>
+
+    <div class="case" id="cba">
+      <h3>Open data portals of the Province of Cordoba</h3>
+      <p class="meta">2025-2026. Government of the Province of Cordoba, Argentina.</p>
+      <p>Full migration of the Province's two data portals: the Open Government portal and the
+        Statistics and Census portal. Both ran on a CKAN version that had gone a decade without
+        updates, on government-owned servers. We moved them to CKAN 2.11 on AWS with a
+        database-level migration, rebuilt the themes and reorganized hundreds of datasets and
+        organizations according to the client's inventory.
+        <a href="https://github.com/avdata99/ckan-to-aws">The deployment infrastructure</a> and
+        <a href="https://github.com/avdata99/ckan-migrator">the database-level migrator</a>
+        were released as free software.</p>
+      <p>We used these two new free tools for both portals, giving each team (different
+        ministries) a private repository to manage what differs between them. We also built
+        two custom extensions to manage the look and feel of each portal.</p>
+      <figure>
+        <img src="/img/datosgestionabierta.jpg" width="1200" height="771" loading="lazy" alt="Home page of the Province of Cordoba open data portal, with search box and categories">
+        <figcaption>datosgestionabierta.cba.gov.ar</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/datosestadistica.jpg" width="1200" height="771" loading="lazy" alt="Home page of the Cordoba Statistics and Census data portal">
+        <figcaption>datosestadistica.cba.gov.ar</figcaption>
+      </figure>
+      <p class="links">
+          <a href="https://datosgestionabierta.cba.gov.ar/">datosgestionabierta.cba.gov.ar</a>
+          <a href="https://datosestadistica.cba.gov.ar/">datosestadistica.cba.gov.ar</a>
+          <a href="https://github.com/avdata99/ckan-to-aws">infrastructure (free software)</a>
+          <a href="https://github.com/avdata99/ckan-migrator">migrator (free software)</a>
+      </p>
+    </div>
+
+    <div class="case" id="unc">
+      <h3>Open data portal of the National University of Cordoba</h3>
+      <p class="meta">2024-2026. Universidad Nacional de Cordoba.</p>
+      <p>Built from scratch on CKAN 2.11: design, extensions, Docker deployment and handover to
+        the university's team on their own GitLab with continuous integration. For this portal
+        we wrote and published extensions anyone can use: Apache Superset integration,
+        database queries from CKAN, error notifications and a harvester for the SIU university
+        information system (which in the end we did not use).</p>
+      <p>Almost everything we built lives in a GitHub organization
+        <a href="https://github.com/unckan">called UnCKAN (CKAN for universities)</a>, so that
+        other institutions can reuse it in the future.</p>
+      <figure>
+        <img src="/img/datosabiertos-unc.jpg" width="1200" height="771" loading="lazy" alt="Home page of the National University of Cordoba open data portal">
+        <figcaption>datosabiertos.unc.edu.ar</figcaption>
+      </figure>
+      <p class="links">
+          <a href="https://datosabiertos.unc.edu.ar/">datosabiertos.unc.edu.ar</a>
+          <a href="https://github.com/unckan">extensions (free software)</a>
+      </p>
+    </div>
+
+    <div class="case" id="presupuesto">
+      <h3>Open Budget of the Province of Cordoba</h3>
+      <p class="meta">2020-2026. For an investigative journalism network.</p>
+      <p>For years we extracted, receipt by receipt, the budget execution the Province publishes
+        on its transparency portal in a barely usable form. On top of that we built from scratch
+        a Python and PostgreSQL platform that manages more than six million payment receipts from
+        2016 to 2026 and more than half a million suppliers. It lets you search by supplier, tax
+        id, program or budget line, see inflation-adjusted amounts, track payment delays and
+        download the data as CSV. It is a closed portal, invitation only, for journalists and
+        researchers.</p>
+      <figure>
+        <img src="/img/presupuesto-abierto-home.jpg" width="1200" height="675" loading="lazy" alt="Open Budget home page: what does the Province of Cordoba spend on, with totals of receipts and suppliers">
+        <figcaption>Home: budget breakdown by jurisdiction, program and receipt.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/presupuesto-abierto-proveedor.jpg" width="1024" height="463" loading="lazy" alt="Supplier page in Open Budget: total paid, receipts, spending over time and user comments">
+        <figcaption>Supplier page: total paid, receipts, payment delays and evolution.</figcaption>
+      </figure>
+    </div>
+
+    <h2>More work</h2>
+    <ul class="more">
+      <li>
+        <strong>Open health information system</strong>
+        <span class="meta">2019-2024. Proposed by the City of Cordoba, funded by the World Health Organization.</span>
+        <p>Medical records and care management in Django, released under a free license.</p>
+        <p class="links"><a href="https://github.com/cluster311/ggg">code</a></p>
+      </li>
+      <li>
+        <strong>Health data infrastructure for Argentina</strong>
+        <span class="meta">2020-2025.</span>
+        <p>Python libraries published on PyPI for the national health system APIs (SISA), ICD-10 codes, health insurance funds, public hospital price lists and proof-of-care forms. Other teams rely on them.</p>
+        <p class="links"><a href="https://github.com/cluster311">code</a></p>
+      </li>
+      <li>
+        <strong>Escrutinio Social</strong>
+        <span class="meta">2019-2023. With Open Data Cordoba.</span>
+        <p>Free platform to run a volunteer-based provisional vote count: photos of tally sheets, double-checked data entry and live results. Used in Cordoba elections as a citizen check on the official count.</p>
+        <p class="links"><a href="https://github.com/EscrutinioSocial/escrutinio-social">code</a></p>
+      </li>
+      <li>
+        <strong>Argentine internet domains</strong>
+        <span class="meta">2009-2026.</span>
+        <p>Historical database of .ar domains, a free whois parser and periodic analyses: in 2026 we surveyed the technology behind 600,000 domains. Covered by La Nacion, Pagina/12 and public television.</p>
+        <p class="links"><a href="https://github.com/OpenDataCordoba/whoare">whoare</a><a href="https://andresvazquez.com.ar/blog/posts/tecnologia-de-dominios-argentinos-2026/">2026 analysis (Spanish)</a></p>
+      </li>
+      <li>
+        <strong>Funcionarios Cordoba</strong>
+        <span class="meta">2018-2022. With Open Data Cordoba.</span>
+        <p>Automatic monitoring of appointments and resignations across seven public bodies of the Province and City of Cordoba, published with no human in the loop.</p>
+        <p class="links"><a href="https://github.com/OpenDataCordoba/funcionarios-cordoba">code</a></p>
+      </li>
+      <li>
+        <strong>Cadena de datos</strong>
+        <span class="meta">2019-2021.</span>
+        <p>Podcast with 39 interviews with open data leaders from Latin America and Spain, published with its own RSS feed and free software.</p>
+        <p class="links"><a href="https://avdata99.github.io/cadena-de-datos/">episodes (Spanish)</a></p>
+      </li>
+      <li>
+        <strong>Training</strong>
+        <span class="meta">2017-2025.</span>
+        <p>A data journalism course for journalists (2017, released online) and Python courses for small groups (2022 and 2025).</p>
+        <p class="links"><a href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/manual/html/index.html">data journalism course (Spanish)</a></p>
+      </li>
+      <li>
+        <strong>Open Data Cordoba</strong>
+        <span class="meta">2013-today.</span>
+        <p>We founded the NGO and from there we run hackathons, publish analyses of electoral, census and budget data, and support journalists and local governments.</p>
+        <p class="links"><a href="https://opendatacordoba.org/">opendatacordoba.org</a></p>
+      </li>
+    </ul>
+
+    <h2>Before</h2>
+    <p>The same team has been building software since 2003 as tbrSoft. That archive lives at
+      <a href="https://tbrsoft.com">tbrsoft.com</a>.</p>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <span>Cluster311, Cordoba, Argentina. Software and data since 2003.</span>
+      <a href="mailto:cluster311@gmail.com">cluster311@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>

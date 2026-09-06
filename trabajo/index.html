@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trabajo | Cluster311</title>
+  <meta name="description" content="Trabajo de Cluster311: portales de datos abiertos de la Provincia de Cordoba y de la UNC, Presupuesto Abierto de Cordoba, datos de salud y mas.">
+  <meta property="og:title" content="Trabajo | Cluster311">
+  <meta property="og:description" content="Trabajo de Cluster311: portales de datos abiertos de la Provincia de Cordoba y de la UNC, Presupuesto Abierto de Cordoba, datos de salud y mas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cluster311.com/trabajo/">
+  <meta property="og:locale" content="es_AR">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://cluster311.com/trabajo/">
+  <link rel="alternate" hreflang="es" href="https://cluster311.com/trabajo/">
+  <link rel="alternate" hreflang="en" href="https://cluster311.com/en/work/">
+  <link rel="alternate" hreflang="x-default" href="https://cluster311.com/trabajo/">
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/">cluster311.com</a>
+      <nav aria-label="Principal">
+      <a href="/">inicio</a>
+      <a href="/servicios/">servicios</a>
+      <a href="/principios/">principios</a>
+      <a href="/trabajo/" aria-current="page">trabajo</a>
+      <a href="/contacto/">contacto</a>
+      </nav>
+      <span class="lang"><a href="/en/work/" lang="en" hreflang="en">english</a></span>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero">
+      <h1>Trabajo</h1>
+      <p class="lede">Portales de datos, infraestructura de datos publicos y herramientas para
+        gobiernos, universidades, medios y organizaciones.</p>
+    </section>
+
+    <div class="case" id="cba">
+      <h3>Portales de datos abiertos de la Provincia de Cordoba</h3>
+      <p class="meta">2025-2026. Gobierno de la Provincia de Cordoba.</p>
+      <p>Migracion completa de los dos portales de datos de la Provincia: el de Gestion Abierta y
+        el de la Direccion de Estadisticas y Censos. Los dos corrian sobre una version de CKAN
+        sin actualizar por una decada, en servidores propios del gobierno. Los llevamos a CKAN
+        2.11 sobre AWS con una migracion a nivel base de datos, reconstruimos los temas y
+        reorganizamos cientos de datasets y organizaciones segun el inventario del cliente.
+        <a href="https://github.com/avdata99/ckan-to-aws">La
+        infraestructura de despliegue</a> y
+        <a href="https://github.com/avdata99/ckan-migrator">el migrador a nivel de base de datos</a>
+        quedaron publicadas como software libre.</p>
+      <p>
+          Usamos estos dos productos nuevos libres para ambos portales dandole a cada equipo
+         (Ministerios distintos) un repo privado para gestionar las diferencias.
+         Tambien se hicieron dos extensiones personalizadas para gestionar la interfaz gráfica
+         de cada portal
+      </p>
+      <figure>
+        <img src="/img/datosgestionabierta.jpg" width="1200" height="771" loading="lazy" alt="Portada del portal de datos abiertos de la Provincia de Cordoba, con buscador y categorias">
+        <figcaption>datosgestionabierta.cba.gov.ar</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/datosestadistica.jpg" width="1200" height="771" loading="lazy" alt="Portada del portal de datos de la Direccion de Estadisticas y Censos de Cordoba">
+        <figcaption>datosestadistica.cba.gov.ar</figcaption>
+      </figure>
+      <p class="links">
+          <a href="https://datosgestionabierta.cba.gov.ar/">datosgestionabierta.cba.gov.ar</a>
+          <a href="https://datosestadistica.cba.gov.ar/">datosestadistica.cba.gov.ar</a>
+          <a href="https://github.com/avdata99/ckan-to-aws">infraestructura (software libre)</a>
+          <a href="https://github.com/avdata99/ckan-migrator">migrador (software libre)</a>
+      </p>
+    </div>
+
+    <div class="case" id="unc">
+      <h3>Portal de datos abiertos de la Universidad Nacional de Cordoba</h3>
+      <p class="meta">2024-2026. Universidad Nacional de Cordoba.</p>
+      <p>Portal hecho desde cero sobre CKAN 2.11: diseño, extensiones, despliegue con Docker y
+        entrega al equipo de la universidad en su propio GitLab con integracion continua. Para
+        este portal escribimos y publicamos extensiones que hoy usa cualquiera: integracion con
+        Apache Superset, consultas a la base desde CKAN,
+        notificacion de errores y un cosechador de datos del sistema SIU (que finalmente no usamos).
+      </p>
+      <p>
+          Casi todo lo realizado quedo en una organizacion de GitHub
+          <a href="https://github.com/unckan">llamada UnCKAN (CKAN para Universidades)</a>
+          pensando en que a futuro otras organizaciones podrían reutilizarlo.
+      </p>
+      <figure>
+        <img src="/img/datosabiertos-unc.jpg" width="1200" height="771" loading="lazy" alt="Portada del portal de datos abiertos de la Universidad Nacional de Cordoba">
+        <figcaption>datosabiertos.unc.edu.ar</figcaption>
+      </figure>
+      <p class="links">
+          <a href="https://datosabiertos.unc.edu.ar/">datosabiertos.unc.edu.ar</a>
+          <a href="https://github.com/unckan">extensiones (software libre)</a>
+      </p>
+    </div>
+
+    <div class="case" id="presupuesto">
+      <h3>Presupuesto Abierto de la Provincia de Cordoba</h3>
+      <p class="meta">2020-2026. Para una red de periodismo de investigacion.</p>
+      <p>Durante años extrajimos, comprobante por comprobante, la ejecucion presupuestaria que la
+        Provincia publica en su portal de transparencia de forma poco accesible. Con eso
+        construimos desde cero una plataforma en Python y PostgreSQL que gestiona mas de seis
+        millones de comprobantes de pago de 2016 a 2026 y mas de medio millon de proveedores.
+        Permite buscar por proveedor, CUIT, programa o partida, ver montos actualizados por
+        inflacion, seguir tiempos de cobro y descargar los datos en CSV. Es un portal cerrado,
+        con acceso por invitacion para periodistas e investigadores.</p>
+      <figure>
+        <img src="/img/presupuesto-abierto-home.jpg" width="1200" height="675" loading="lazy" alt="Portada de Presupuesto Abierto: en que gasta la Provincia de Cordoba, con totales de comprobantes y proveedores">
+        <figcaption>Portada: desglose del presupuesto por jurisdiccion, programa y comprobante.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/presupuesto-abierto-proveedor.jpg" width="1024" height="463" loading="lazy" alt="Ficha de un proveedor en Presupuesto Abierto: total cobrado, comprobantes, evolucion del gasto y comentarios de usuarios">
+        <figcaption>Ficha de proveedor: total cobrado, comprobantes, tiempos de cobro y evolucion.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Mas trabajo</h2>
+    <ul class="more">
+      <li>
+        <strong>Sistema abierto de informacion de la salud</strong>
+        <span class="meta">2019-2024. Propuesto por la Municipalidad de Cordoba, financiado por la Organizacion Mundial de la Salud.</span>
+        <p>Historias clinicas y gestion de la atencion en Django, publicado con licencia libre.</p>
+        <p class="links"><a href="https://github.com/cluster311/ggg">codigo</a></p>
+      </li>
+      <li>
+        <strong>Infraestructura de datos de salud para Argentina</strong>
+        <span class="meta">2020-2025.</span>
+        <p>Librerias Python publicadas en PyPI para las APIs del sistema sanitario nacional (SISA), codigos CIE-10, obras sociales, nomencladores de hospitales publicos y comprobantes de atencion. Las usan otros equipos.</p>
+        <p class="links"><a href="https://github.com/cluster311">codigo</a></p>
+      </li>
+      <li>
+        <strong>Escrutinio Social</strong>
+        <span class="meta">2019-2023. Con Open Data Cordoba.</span>
+        <p>Plataforma libre para emular un escrutinio provisorio con voluntarios: fotos de actas, carga con doble chequeo y resultados en tiempo real. Usada en elecciones de Cordoba como control ciudadano del conteo oficial.</p>
+        <p class="links"><a href="https://github.com/EscrutinioSocial/escrutinio-social">codigo</a></p>
+      </li>
+      <li>
+        <strong>Dominios de internet argentinos</strong>
+        <span class="meta">2009-2026.</span>
+        <p>Base historica de dominios .ar, un parser libre de whois y analisis periodicos: en 2026 relevamos la tecnologia detras de 600.000 dominios. Con cobertura en La Nacion, Pagina/12 y la TV Publica.</p>
+        <p class="links"><a href="https://github.com/OpenDataCordoba/whoare">whoare</a><a href="https://andresvazquez.com.ar/blog/posts/tecnologia-de-dominios-argentinos-2026/">analisis 2026</a></p>
+      </li>
+      <li>
+        <strong>Funcionarios Cordoba</strong>
+        <span class="meta">2018-2022. Con Open Data Cordoba.</span>
+        <p>Monitoreo automatico de designaciones y renuncias en siete organismos de la Provincia y la Ciudad de Cordoba, publicado sin intervencion humana.</p>
+        <p class="links"><a href="https://github.com/OpenDataCordoba/funcionarios-cordoba">codigo</a></p>
+      </li>
+      <li>
+        <strong>Cadena de datos</strong>
+        <span class="meta">2019-2021.</span>
+        <p>Podcast con 39 entrevistas a referentes de datos abiertos de Latinoamerica y España, publicado con RSS propio y software libre.</p>
+        <p class="links"><a href="https://avdata99.github.io/cadena-de-datos/">episodios</a></p>
+      </li>
+      <li>
+        <strong>Formacion</strong>
+        <span class="meta">2017-2025.</span>
+        <p>Curso de periodismo de datos para periodistas (2017, liberado en linea) y cursos de Python para grupos chicos (2022 y 2025).</p>
+        <p class="links"><a href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/manual/html/index.html">curso de periodismo de datos</a></p>
+      </li>
+      <li>
+        <strong>Open Data Cordoba</strong>
+        <span class="meta">2013-hoy.</span>
+        <p>Fundamos la ONG y desde ahi organizamos hackatones, publicamos analisis de datos electorales, censales y presupuestarios, y acompañamos a periodistas y gobiernos locales.</p>
+        <p class="links"><a href="https://opendatacordoba.org/">opendatacordoba.org</a></p>
+      </li>
+    </ul>
+
+    <h2>Antes</h2>
+    <p>El mismo equipo hizo software desde 2003 como tbrSoft. Ese archivo esta en
+      <a href="https://tbrsoft.com">tbrsoft.com</a>.</p>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <span>Cluster311, Cordoba, Argentina. Software y datos desde 2003.</span>
+      <a href="mailto:cluster311@gmail.com">cluster311@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>

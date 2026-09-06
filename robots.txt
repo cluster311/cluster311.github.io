@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cluster311.com/sitemap.xml
