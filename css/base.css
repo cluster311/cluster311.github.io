@@ -275,3 +275,5 @@ header.site .lang a:hover { color: var(--accent); }
 .more li p { margin: 0.2rem 0 0; }
 .more li .links { font-size: 0.9rem; margin-top: 0.2rem; }
 .more li .links a + a::before { content: " / "; color: var(--fg-dim); }
+
+.razon-social { color: var(--fg-dim); font-size: 0.95rem; }
